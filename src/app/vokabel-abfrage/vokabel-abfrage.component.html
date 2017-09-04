@@ -1,19 +1,31 @@
 <div class="container">
+
+  <br>
+
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-
-      <h1>Vokabeltrainer</h1>
-
-      <ul class="nav nav-tabs">
-        <li role="presentation" routerLinkActive="active"><a routerLink="/deutsch">Deutsch</a> </li>
-        <li role="presentation"><a routerLink="/english">English</a> </li>
-      </ul>
-
+    <div class="col-xs-12">
+      <app-deutsch [vokabel]="vokabeln[this.index]" [toggle]="germanToggle"></app-deutsch>
     </div>
   </div>
+
+  <br>
+
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-      <router-outlet></router-outlet>
+    <div class="col-xs-12">
+      <app-english [vokabel]="vokabeln[this.index]" [toggle]="englishToggle"></app-english>
     </div>
   </div>
+
+  <br>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-primary" (click)="toggleGerman()">Deutsch</button>
+      <button class="btn btn-primary" (click)="toggleEnglish()">Englisch</button>
+      <button class="btn btn-primary" (click)="nextVokabel()">Next</button>
+    </div>
+  </div>
+
+
+
 </div>

@@ -1,3 +1,6 @@
-<p>
-  deutsch works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <p *ngIf="toggle">{{ vokabel.textBaseLanguage}}</p>
+    <p *ngIf="!toggle">-</p>
+  </div>
+</div>
