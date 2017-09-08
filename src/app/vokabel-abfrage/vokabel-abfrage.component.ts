@@ -8,7 +8,7 @@ import {Vokabel} from "./vokabel.model";
 })
 export class VokabelAbfrageComponent implements OnInit {
 
-  vokabeln : Vokabel[] = [
+  unit01 : Vokabel[] = [
     new Vokabel('Good morning!', 'Guten Morgen!'),
     new Vokabel('Hello!','Hallo!'),
     new Vokabel('How are you?','Wie geht es Ihnen / Dir / Euch?'),
@@ -42,6 +42,56 @@ export class VokabelAbfrageComponent implements OnInit {
     new Vokabel('I\'m finished! / I\'m done','Ich bin fertig!'),
     new Vokabel('Are there any volunteers?','Gibt es Freiwillige?')
   ];
+
+  unit01CheckIn : Vokabel[] = [
+    new Vokabel('check-in','Einchecken'),
+    new Vokabel('Hello','Hallo'),
+    new Vokabel('My name is Julia','Ich heiße Julia'),
+    new Vokabel('I\'m ten','Ich bin 10'),
+    new Vokabel('I\'m from Dreieich','Ich bin aus Dreieich'),
+    new Vokabel('I\'m in school','Ich bin in der Schule'),
+    new Vokabel('I\'m a pupil','Ich bin Schüler(in)'),
+    new Vokabel('Julia is a pupil at Anna-Schmidt-Schule','Julia ist eine Schülerin an der Anna-Schmidt-Schule'),
+    new Vokabel('I\'m from Frankfurt too','Ich komme auch aus Frankfurt'),
+    new Vokabel('This is my home','Dies ist mein Zuhause'),
+    new Vokabel('This is my new school','Dies ist meine neue Schule'),
+    new Vokabel('I\'m in Year 5','Ich bin in der 5. Klasse.'),
+    new Vokabel('This is a tiny mouse','Das ist eine kleine Maus'),
+    new Vokabel('I\'m a tiny mouse and this is my home','Ich bin eine kleine Maus und das ist mein Zuhause'),
+    new Vokabel('What\'s your name?','Wie heißt Du?'),
+    new Vokabel('How old are you?','Wie alt bist Du?'),
+    new Vokabel('Where are you from?','Wo kommst Du her?'),
+    new Vokabel('How to say hello in English.','Wie man jemanden auf English begrüßt.'),
+    new Vokabel('useful','nützlich, hilfreich'),
+    new Vokabel('phrase','Satz'),
+    new Vokabel('Listening','Hörverstehensübung (hier)'),
+    new Vokabel('phone number','Telefonnummer'),
+    new Vokabel('number','Nummer, Hausnummer, Zahl'),
+    new Vokabel('mobile','Handy, MObiltelefon'),
+    new Vokabel('ring!','klingeling!'),
+    new Vokabel('or','oder'),
+    new Vokabel('to write','schreiben'),
+    new Vokabel('the','der, die, das'),
+    new Vokabel('Hands on','Pack\'s an!'),
+    new Vokabel('folder','Ordner, Mappe'),
+    new Vokabel('to start','anfangen, beginnen'),
+    new Vokabel('English','Englisch'),
+    new Vokabel('word bank','Wortsammlung'),
+    new Vokabel('word','Wort'),
+    new Vokabel('to know','wissen'),
+    new Vokabel('primary school','Grundschule'),
+    new Vokabel('more','mehr, weitere'),
+    new Vokabel('about','Über'),
+    new Vokabel('yourself','dich selbst')
+  ];
+
+  unit01NewFriend : Vokabel[] = [
+    new Vokabel('language','Sprache'),
+    new Vokabel('meeting people', 'Leute kennen lernen, Leute treffen'),
+    new Vokabel('friend','Freund, Freundin')
+  ];
+
+  vokabeln : Vokabel[] = this.unit01CheckIn;
 
   index: number;
   germanToggle: boolean = true;
