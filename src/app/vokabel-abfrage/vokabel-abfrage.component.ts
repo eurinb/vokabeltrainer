@@ -44,6 +44,10 @@ export class VokabelAbfrageComponent implements OnInit {
   ];
 
   unit01CheckIn : Vokabel[] = [
+    new Vokabel('pick-up','Pick-up, Kleintransporter'),
+    new Vokabel('to pick-up', 'abholen, mitnehmen'),
+    new Vokabel('unit', 'Lektion, Kapitel, Einheit'),
+    new Vokabel('school','Schule'),
     new Vokabel('check-in','Einchecken'),
     new Vokabel('Hello','Hallo'),
     new Vokabel('My name is Julia','Ich heiße Julia'),
@@ -82,7 +86,10 @@ export class VokabelAbfrageComponent implements OnInit {
     new Vokabel('primary school','Grundschule'),
     new Vokabel('more','mehr, weitere'),
     new Vokabel('about','Über'),
-    new Vokabel('yourself','dich selbst')
+    new Vokabel('yourself','dich selbst'),
+    new Vokabel('language','Sprache'),
+    new Vokabel('meeting people', 'Leute kennen lernen, Leute treffen'),
+    new Vokabel('friend','Freund, Freundin')
   ];
 
   unit01NewFriend : Vokabel[] = [
